@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">THE BEST BROWSER</string>
+    <string name="not_robot">Я не робот</string>
+    <string name="button_comments">Comments</string>
+    <string name="body_comment">Комментарий: </string>
+    <string name="from_comment">От: </string>
 </resources>

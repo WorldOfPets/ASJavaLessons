@@ -15,15 +15,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
 
-    <CheckBox
-        android:id="@+id/checkbox_robot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Я не робот"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/main_text_view">
+        <CheckBox
+            android:id="@+id/checkbox_robot"
+            android:layout_width="25sp"
+            android:layout_margin="5dp"
+            android:layout_height="25dp"
+            android:button="@android:color/transparent"
+            android:background="@drawable/checkbox_my_style" />
+        <TextView
+            android:layout_margin="5dp"
+            android:text="@string/not_robot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
 
     <Button
         android:id="@+id/button_go"
@@ -33,5 +46,14 @@
         android:text="GO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkbox_robot" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_comments"
+        android:text="@string/button_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_go" />
 </androidx.constraintlayout.widget.ConstraintLayout>
